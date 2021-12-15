@@ -4,15 +4,51 @@
 
 This is the root repository of the ForgeRock OpenBanking toolkit, providing an overview of the toolkit, what it offers and a jumping off point to all the other repositories. This is your 'home page'.
 
-| Bundle| Maven version| Github repo | Description |
-|---|---|---|---|
-|ASPSP|[![Bintray](https://img.shields.io/bintray/v/openbanking-toolkit/OpenBankingToolKit/openbanking-aspsp.svg?maxAge=2592000)](https://bintray.com/openbanking-toolkit/OpenBankingToolKit/openbanking-aspsp)| [openbanking-aspsp](https://github.com/OpenBankingToolkit/openbanking-aspsp/)|Protect your bank APIs using Open Banking. Provide FAPI conformance on top of an OIDC provider like ForgeRock AM|
-|Analytics|[![Bintray](https://img.shields.io/bintray/v/openbanking-toolkit/OpenBankingToolKit/openbanking-analytics.svg?maxAge=2592000)](https://bintray.com/openbanking-toolkit/OpenBankingToolKit/openbanking-analytics)|[openbanking-analytics](https://github.com/OpenBankingToolkit/openbanking-analytics/)|Provide analytics data of your Open Banking eco-system, ready to share to with the authority like FCA|
-|JWKMS (crypto service)|[![Bintray](https://img.shields.io/bintray/v/openbanking-toolkit/OpenBankingToolKit/openbanking-jwkms.svg?maxAge=2592000)](https://bintray.com/openbanking-toolkit/OpenBankingToolKit/openbanking-jwkms)|[openbanking-jwkms](https://github.com/OpenBankingToolkit/openbanking-jwkms/)|Crypto service for your applications. Help you sign/validate JWS and more|
-|Directory|[![Bintray](https://img.shields.io/bintray/v/openbanking-toolkit/OpenBankingToolKit/openbanking-directory.svg?maxAge=2592000)](https://bintray.com/openbanking-toolkit/OpenBankingToolKit/openbanking-directory)|[openbanking-directory](https://github.com/OpenBankingToolkit/openbanking-directory/)|Central authority that issues certificates and SSA|
-|TPP|[![Bintray](https://img.shields.io/bintray/v/openbanking-toolkit/OpenBankingToolKit/openbanking-tpp.svg?maxAge=2592000)](https://bintray.com/openbanking-toolkit/OpenBankingToolKit/openbanking-tpp)|[openbanking-tpp](https://github.com/OpenBankingToolkit/openbanking-tpp/)|A sample TPP that implement OB UK 1.1|
-|License|![license](https://img.shields.io/github/license/ACRA/acra.svg)|||
+![license](https://img.shields.io/github/license/ACRA/acra.svg)
 
+### Open Banking Reference Implementation - Backend 
+
+| Backend |Release version| Github repo | Description | 
+|---|---| --- | --- | 
+|Services|[![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-reference-implementation.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-reference-implementation)|[reference-impl](https://github.com/OpenBankingToolkit/openbanking-reference-implementation)| Example of how you can bundle all the micro-services together |
+
+### Artifacts and libraries
+| Artifact | Release version | Github repo | Description |
+| --- | --- | --- | --- |
+| eidas |[![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/eidas-psd2-sdk.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/eidas-psd2-sdk)| [eidas-psd2-sdk](https://github.com/OpenBankingToolkit/eidas-psd2-sdk) | A Java SDK to help you manipulate EIDAS - PSD2 certificates |
+| uk-datamodel |[![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-uk-datamodel.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-uk-datamodel) | [uk-datamodel](https://github.com/OpenBankingToolkit/openbanking-uk-datamodel)| A Java data model library (Generated classes from OB Swagger documentation) for Open Banking uk: [read-write-apis](https://www.openbanking.org.uk/read-write-apis/)|
+| maven parent | [![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-parent.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-parent)| [starter parent](https://github.com/OpenBankingToolkit/openbanking-parent) | Maven parent used by the ForgeRock OpenBanking maven project|
+| common | [![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-common.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-common)|[common](https://github.com/OpenBankingToolkit/openbanking-common) | ForgeRock OpenBanking Commons is a set of abstractions and common classes used in different ForgeRock OpenBanking projects|
+| clients | [![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-clients.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-clients)|[clients](https://github.com/OpenBankingToolkit/openbanking-clients) | ForgeRock OpenBanking clients used in different ForgeRock OpenBanking projects|
+| jwkms | [![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-jwkms.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-jwkms)|[jwkms](https://github.com/OpenBankingToolkit/openbanking-jwkms) | The JWKMS provides essential key management functionality|
+| auth | [![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-auth.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-auth)|[auth](https://github.com/OpenBankingToolkit/openbanking-auth) | ForgeRock OpenBanking Auth is a library that can incorporated into a project to enable login using Authorisation Code Flow|
+| uk-extensions | [![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-uk-extensions.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-uk-extensions)|[uk-extensions](https://github.com/OpenBankingToolkit/openbanking-uk-extensions) | This library extensions has been designed to write the ad-hoc functions and operations to extend the existing ones|
+
+### Bundles
+
+| Bundle| Release version| Github repo | Description |
+|---|---|---|---|
+|ASPSP|[![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-aspsp.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-aspsp)| [openbanking-aspsp](https://github.com/OpenBankingToolkit/openbanking-aspsp/)|Protect your bank APIs using Open Banking. Provide FAPI conformance on top of an OIDC provider like ForgeRock AM|
+|Analytics|[![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-analytics.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-analytics)|[openbanking-analytics](https://github.com/OpenBankingToolkit/openbanking-analytics/)|Provide analytics data of your Open Banking eco-system, ready to share to with the authority like FCA|
+|Directory|[![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-directory.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-directory)|[openbanking-directory](https://github.com/OpenBankingToolkit/openbanking-directory/)|Central authority that issues certificates and SSA|
+|TPP|[![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-tpp.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-tpp)|[openbanking-tpp](https://github.com/OpenBankingToolkit/openbanking-tpp/)|A sample TPP that implement OB UK 1.1|
+
+### Release order
+| Priority | type | latest version | project |
+| --- | --- | --- | --- |
+| 1 | artifact | [![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/eidas-psd2-sdk.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/eidas-psd2-sdk)| [eidas-psd2-sdk](https://github.com/OpenBankingToolkit/eidas-psd2-sdk) |
+| 1 | artifact |[![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-uk-datamodel.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-uk-datamodel) | [uk-datamodel](https://github.com/OpenBankingToolkit/openbanking-uk-datamodel)|
+| 2 |  artifact |[![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-parent.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-parent)| [starter parent](https://github.com/OpenBankingToolkit/openbanking-parent) |
+| 3 | artifact | [![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-common.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-common)|[common](https://github.com/OpenBankingToolkit/openbanking-common) |
+| 4 |  artifact |[![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-clients.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-clients)|[clients](https://github.com/OpenBankingToolkit/openbanking-clients) |
+| 5 | artifact | [![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-jwkms.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-jwkms)|[jwkms](https://github.com/OpenBankingToolkit/openbanking-jwkms) |
+| 5 | artifact | [![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-auth.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-auth)|[auth](https://github.com/OpenBankingToolkit/openbanking-auth) |
+|6| bundle |[![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-aspsp.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-aspsp)| [openbanking-aspsp](https://github.com/OpenBankingToolkit/openbanking-aspsp/)|
+|6|bundle |[![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-analytics.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-analytics)|[openbanking-analytics](https://github.com/OpenBankingToolkit/openbanking-analytics/)|
+|6|bundle |[![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-directory.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-directory)|[openbanking-directory](https://github.com/OpenBankingToolkit/openbanking-directory/)|
+|6|bundle |[![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-tpp.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-tpp)|[openbanking-tpp](https://github.com/OpenBankingToolkit/openbanking-tpp/)|
+| 7| artifact |[![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-uk-extensions.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-uk-extensions)|[uk-extensions](https://github.com/OpenBankingToolkit/openbanking-uk-extensions) |
+|8| services backend|[![GitHub release (latest by date)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-reference-implementation.svg)](https://img.shields.io/github/v/release/OpenBankingToolkit/openbanking-reference-implementation)|[reference-impl](https://github.com/OpenBankingToolkit/openbanking-reference-implementation)
 # What is this tool kit?
 
 This toolkit has been designed to help financial organisations build secure reliable Open Banking APIs. It enables financial organisations to allow their customers to securely provide access to their data and accounts to other financial service providers such as account aggregator apps, or easy payment apps.
